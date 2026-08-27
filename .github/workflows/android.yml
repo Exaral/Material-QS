@@ -21,3 +21,8 @@ jobs:
       run: |
         chmod +x gradlew || true
         gradle assembleDebug
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: meu-aplicativo-apk
+        path: Android16QuickSettings/app/build/outputs/apk/debug/*.apk
