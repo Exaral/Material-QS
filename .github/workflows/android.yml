@@ -2,6 +2,9 @@ name: Build Android APK
 on:
   push:
     branches: [ "main" ]
+defaults:
+  run:
+    working-directory: Android16QuickSettings
 jobs:
   build:
     runs-on: ubuntu-latest
